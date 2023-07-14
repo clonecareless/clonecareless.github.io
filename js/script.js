@@ -137,6 +137,7 @@ let deadline = date.getFullYear() + "-" + (date.getMonth()+1) + "-" + (date.getD
             seconds.innerHTML = getZero(t.seconds);
 
             if (t.total <= 0) {
+                clearInterval(timeInterval);
                 getTimeRemaining(endtime);
             }
         }
