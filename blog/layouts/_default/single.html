@@ -70,37 +70,36 @@
     </div>
     {{ end }} -->
 
-    {{ if and .Params.vk_video (ne .Type "post") }}
-    <h2>Видео результатов ниже</h2>
-    <div class="video-container">
-    {{ if .Params.vk_video }}
-    {{ $url := .Params.vk_video }}
-    {{ $urlParts := (split $url "?") }}
-    {{ $query := (index $urlParts 1) }}
-    {{ $params := (dict) }}
-    {{ range (split $query "&") }}
-      {{ $pair := (split . "=") }}
-      {{ $params = merge $params (dict (index $pair 0) (index $pair 1)) }}
+{{ if and .Params.vk_video (ne .Type "post") }}
+<h2>Видео результатов ниже</h2>
+<div class="video-container">
+  {{ if .Params.vk_video }}
+    {{ $oid := "" }}
+    {{ $id := "" }}
+
+    {{ if strings.Contains .Params.vk_video "oid=" }}
+      {{ $oid = (index (split (index (split .Params.vk_video "&oid=") 1) "&") 0) }}
     {{ end }}
-    
-    {{ $oid := (index $params "oid") }}
-    {{ $id := (index $params "id") }}
-    
+
+    {{ if strings.Contains .Params.vk_video "id=" }}
+      {{ $id = (index (split (index (split .Params.vk_video "&id=") 1) "&") 0) }}
+    {{ end }}
+
     {{ if and $oid $id }}
-    <iframe class="responsive-iframe"
-      width="100%"
-      height="400"
-      src="https://vk.com/video_ext.php?oid={{ $oid }}&id={{ $id }}"
-      frameborder="0"
-      allowfullscreen
-      allow="autoplay; encrypted-media">
-    </iframe>
+      <iframe 
+        class="responsive-iframe"
+        src="https://vk.com/video_ext.php?oid={{ $oid }}&id={{ $id }}"
+        frameborder="0"
+        allowfullscreen
+        allow="autoplay; encrypted-media">
+      </iframe>
     {{ else }}
-    <p>Ошибка: Не удалось извлечь идентификатор видео.</p>
+      <p>Ошибка: Не удалось извлечь идентификатор видео.</p>
     {{ end }}
-    {{ end }}
-    </div>
-    {{ end }}
+  {{ end }}
+</div>
+{{ end }}
+
 
     
 
