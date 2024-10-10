@@ -1,0 +1,74 @@
+
+<h2>Видео результатов ниже</h2>
+
+<style>
+  .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* Соотношение сторон 16:9 */
+      height: 0;
+  }
+
+  .responsive-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
+</style>
+
+<div class="video-container">
+  {{ if .Params.youtube_video }}
+    {{ $videoID := "" }}
+    {{ if strings.Contains .Params.youtube_video "watch?v=" }}
+      {{ $videoID = (index (split .Params.youtube_video "=") 1) }}
+    {{ else if strings.Contains .Params.youtube_video "embed/" }}
+      {{ $videoID = (index (split .Params.youtube_video "/") 4) }}
+    {{ end }}
+
+    {{ if $videoID }}
+      <iframe
+        class="responsive-iframe"
+        src="https://www.youtube.com/embed/{{ $videoID }}"
+        frameborder="0"
+        allowfullscreen
+        allow="autoplay; encrypted-media">
+      </iframe>
+    {{ else }}
+      <p>Ошибка: Не удалось извлечь идентификатор видео.</p>
+    {{ end }}
+  {{ end }}
+
+<!-- {{ if .Params.vk_video }}
+{{ $videoID := "" }}
+{{ if strings.Contains .Params.vk_video "video_ext.php" }}
+{{ $videoID = (index (split (index (split .Params.vk_video "?") 0) "/") 2) }}
+{{ else if strings.Contains .Params.vk_video "video" }}
+{{ $videoID = (index (split .Params.vk_video "_") 1) }}
+{{ end }} -->
+
+<!-- {{ if $videoID }}
+<iframe
+  width="100%"
+  height="400"
+  src="https://vk.com/video_ext.php?oid={{ (index (split $videoID "_") 0) }}&id={{ (index (split $videoID "_") 1) }}"
+  frameborder="0"
+  allowfullscreen
+  allow="autoplay; encrypted-media">
+</iframe>
+{{ else }}
+<p>Ошибка: Не удалось извлечь идентификатор видео.</p>
+{{ end }}
+{{ end }} -->
+
+<!-- {{ if .Params.vk_video }}
+<iframe
+    src="{{ .Params.vk_video | replace "vk.com" "vk.com/video" | replace "video" "video_embed" | replace "_" "/embed_" }}"
+    width="100%"
+    height="400"
+    frameborder="0"
+    allowfullscreen
+    allow="autoplay; encrypted-media">
+</iframe>
+{{ end }} -->
