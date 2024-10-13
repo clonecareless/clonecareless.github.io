@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on РечиСтарт</title>
-    <link>/post/</link>
+    <link>/blog/post/</link>
     <description>Recent content in Posts on РечиСтарт</description>
     <generator>Hugo</generator>
     <language>ru-RU</language>
     <lastBuildDate>Sun, 06 Oct 2024 19:47:48 +0300</lastBuildDate>
-    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/blog/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Афазия: Понимание и Подходы к Лечению</title>
-      <link>/post/my-first-post/</link>
+      <link>/blog/post/my-first-post/</link>
       <pubDate>Sun, 06 Oct 2024 19:47:48 +0300</pubDate>
-      <guid>/post/my-first-post/</guid>
+      <guid>/blog/post/my-first-post/</guid>
       <description>&lt;h3 id=&#34;что-такое-афазия&#34;&gt;Что такое афазия?&lt;/h3&gt;&#xA;&lt;p&gt;Афазия — это нарушение речи, которое затрагивает способность человека говорить, понимать, читать и писать. Она может возникнуть в результате повреждения мозга, чаще всего из-за инсульта, травмы головы или опухоли.&lt;/p&gt;</description>
     </item>
   </channel>

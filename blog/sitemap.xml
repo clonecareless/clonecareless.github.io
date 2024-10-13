@@ -2,91 +2,91 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/post/</loc>
+    <loc>/blog/post/</loc>
     <lastmod>2024-10-06T19:47:48+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/post/my-first-post/</loc>
+    <loc>/blog/post/my-first-post/</loc>
     <lastmod>2024-10-06T19:47:48+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/</loc>
+    <loc>/blog/</loc>
     <lastmod>2024-10-06T19:47:48+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/collections/</loc>
+    <loc>/blog/collections/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/collections/2023/collections/</loc>
+    <loc>/blog/collections/2023/collections/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/collections/2023/collections2/</loc>
+    <loc>/blog/collections/2023/collections2/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/collections/2023/collections3/</loc>
+    <loc>/blog/collections/2023/collections3/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/collections/2023/collections4/</loc>
+    <loc>/blog/collections/2023/collections4/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/collections/2023/collections5/</loc>
+    <loc>/blog/collections/2023/collections5/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/collections/2023/collections6/</loc>
+    <loc>/blog/collections/2023/collections6/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/newsletter/</loc>
+    <loc>/blog/tags/newsletter/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>/blog/tags/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/notes/2020/change/</loc>
+    <loc>/blog/notes/2020/change/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/notes/2020/change2/</loc>
+    <loc>/blog/notes/2020/change2/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/notes/2020/change3/</loc>
+    <loc>/blog/notes/2020/change3/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/notes/</loc>
+    <loc>/blog/notes/</loc>
     <lastmod>2020-02-01T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/about/</loc>
+    <loc>/blog/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>/blog/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
