@@ -107,12 +107,14 @@
 
 <meta name="Permissions-Policy" content="screen-wake-lock=(*)">  
 <style>
+
   .video-container {
       position: relative;
       overflow: hidden;
       width: 100%;
       cursor: pointer;
     }
+    
     .video-container:hover {
       background-size: 102%;
     }
@@ -437,8 +439,8 @@
             wrapper.innerHTML = `
             <iframe 
               class="responsive-iframe"
-              allow="screen-wake-lock autoplay"
-              src="https:\/\/vk.com\/video_ext.php?oid=-220424048\u0026id=456239022\u0026hd=2\u0026autoplay=1\u0026muted=false"
+              allow="screen-wake-lock"
+              src="https:\/\/vk.com\/video_ext.php?oid=-220424048\u0026id=456239022\u0026hd=2"
               allowfullscreen
               loading="lazy">
             </iframe>
@@ -454,8 +456,8 @@
         <noscript>
             <iframe 
             class="responsive-iframe"
-            allow="screen-wake-lock autoplay"
-            src="https://vk.com/video_ext.php?oid=-220424048&amp;id=456239022&amp;hd=2&amp;autoplay=1&amp;muted=false"
+            allow="screen-wake-lock"
+            src="https://vk.com/video_ext.php?oid=-220424048&amp;id=456239022&amp;hd=2"
             allowfullscreen
             loading="lazy">
           </iframe>
