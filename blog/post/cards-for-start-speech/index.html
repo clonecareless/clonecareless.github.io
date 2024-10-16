@@ -111,17 +111,23 @@
       position: relative;
       overflow: hidden;
       width: 100%;
+      cursor: pointer;
+      &:hover {
+        background-size: 102%;
+      }
   }
 
    
   .horizontal-video {
       padding-top: 56.25%;  
-  }
-
-   
-  .vertical-video {
+      background: url(/img/video/vk_video_landscape.webp) center / contain no-repeat;
+    }
+    
+     
+    .vertical-video {
       padding-top: 177.77%;  
-  }
+      background: url(/img/video/vk_video_portrait.webp) center / contain no-repeat;
+    }
 
    
   .responsive-iframe {
@@ -424,17 +430,28 @@
         
       <h2>Видео ниже ⬇️</h2>
 
+      <script>
+        function showVKVideo () {
+          const wrapper = document.querySelector('.video-container');
+          console.log(wrapper)
+          if (wrapper) {
+            wrapper.innerHTML = `
+              <iframe 
+                class="responsive-iframe"
+                allow="screen-wake-lock"
+                src="https:\/\/vk.com\/video_ext.php?oid=-220424048\u0026id=456239022\u0026hd=2"
+                allowfullscreen >
+              </iframe>
+           `
+          }
+        }
+      </script>
+
       
-      <div class="video-container vertical-video">
-        
-          <iframe 
-            class="responsive-iframe"
-            allow="screen-wake-lock"
-            src="https://vk.com/video_ext.php?oid=-220424048&amp;id=456239022&amp;hd=2"
-            allowfullscreen
-            loading="lazy" >
-          </iframe>
-        
+      <div 
+        onclick="showVKVideo()" 
+        class="video-container vertical-video">
+
       </div>
       
 
@@ -460,9 +477,7 @@
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
       <hr class="m-0" >
     </div>
-    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-2">
-      
-    </div>
+    
 
     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 pt-4">
       
