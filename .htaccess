@@ -1,9 +1,0 @@
-Redirect 301 /blog/post/2024/okt/cards-for-start-speech/ /blog/logopedicheskie-kartochki/
-Redirect 301 /blog/post/2024/nov/vosstanovlenie-rechi-posle-insulta-doma/ /blog/vosstanovlenie-rechi-posle-insulta-doma/
-Redirect 301 /blog/post/2024/nov/uprazhneniya-dlya-vosstanovleniya-rechi-posle-insulta/ /blog/uprazhneniya-dlya-vosstanovleniya-rechi-posle-insulta/
-Redirect 301 /blog/results/2024/fast-result/ /blog/results/bystrye-rezultaty-v-logopedii/
-
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^.]+)$ $1.html [L]
